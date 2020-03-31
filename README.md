@@ -8,7 +8,7 @@ In this project I have created
 
 a SSL chain of 4 certificates ( 1 Root CA , 2 Intermediate CA's and 1 server certificate )
 
-Tools Used: openssl, gitbashstrong text
+Tools Used: openssl, gitbash , visual studio code
 
 
 # Folder and Files structure followed
