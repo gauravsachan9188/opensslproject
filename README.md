@@ -48,7 +48,7 @@ In this project I have created a SSL chain of 4 certificates ( 1 Root CA , 2 Int
 
 ## Installation and configuration guide
 
-1. #### **ROOT CA Certificate generation**
+1. ### ROOT CA Certificate generation
 
    1. ### Prepare the directory
 		```
@@ -77,7 +77,7 @@ In this project I have created a SSL chain of 4 certificates ( 1 Root CA , 2 Int
 		```
 		# openssl x509 -noout -text -in certs/universe.cert.pem
 		```	
-2. #### **INTERMEDIATE CA 1 Certificate** generation
+2. ### INTERMEDIATE CA 1 Certificate generation
 
    1. ### Prepare the directory
 		```
@@ -113,7 +113,7 @@ In this project I have created a SSL chain of 4 certificates ( 1 Root CA , 2 Int
 		```
 		# openssl x509 -noout -text -in certs/galaxy.cert.pem
 		```	
-3. #### **INTERMEDIATE CA 2 Certificate generation**
+3. ### INTERMEDIATE CA 2 Certificate generation
 
    1. ### Prepare the directory
 		```
@@ -150,7 +150,7 @@ In this project I have created a SSL chain of 4 certificates ( 1 Root CA , 2 Int
 		```
 		# openssl verify -CAfile certs/chain.cert.pem certs/planets.cert.pem
 		```	
-4. #### **SERVER Certificate generation**
+4. ### SERVER Certificate generation
 
    1. ### Prepare the directory
 		```
@@ -202,7 +202,7 @@ In this project I have created a SSL chain of 4 certificates ( 1 Root CA , 2 Int
 		```
 		# openssl verify -CAfile chain.cert.pem earth.com.cert.pem
 		```		
-5. #### **SERVER Certificate Installation on Apache Web Server**
+5. ### SERVER Certificate Installation on Apache Web Server
 	##### We will change the certificate format from `.pem` to `.crt` for Apache web server.
 
    1.  Copy the generated server certificate `earth.com.cert.pem` from `/root/ca/server/earth/` to Apache location `C:\xampp\apache\conf\ssl.crt`
