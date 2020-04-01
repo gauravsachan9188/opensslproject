@@ -7,7 +7,7 @@ default_ca = CA_default
 
 [ CA_default ]
 # Directory and file locations.
-dir               = c:/ssll/root/ca/ica2
+dir               = c:/opensslproject/root/ca/ica2
 certs             = $dir/certs
 crl_dir           = $dir/crl
 new_certs_dir     = $dir/newcerts
