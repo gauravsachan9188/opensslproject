@@ -45,7 +45,7 @@ Tools Used: openssl, gitbash , visual studio code
 			 
 	- Server
 		-  Certificate Folder
-				- www.venus.com.cert.pem
+      		- www.venus.com.cert.pem
 		- Private Key Folder
 				- www.venus.com.key.pem
 		- CSR Folder
